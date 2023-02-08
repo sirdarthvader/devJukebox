@@ -22,9 +22,3 @@ export type Tag = {
   id: string;
   label: string;
 };
-
-export type NewNote = {
-  id: string
-  name: string
-  tags: Tag[]
-}
