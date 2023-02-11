@@ -23,9 +23,3 @@ export type Tag = {
   label: string;
 };
 
-export type User = {
-  firstName: string
-  lastName: string
-  dob: string
-  gender: 'male' | 'female'|  'na'
-}
