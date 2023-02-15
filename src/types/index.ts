@@ -1,24 +1,24 @@
-export type Note = {
+export interface Note extends NoteData {
   id: string;
-} & NoteData;
+}
 
-export type RawNote = {
+export interface RawNote extends RawNoteData {
   id: string;
-} & RawNoteData;
+} 
 
-export type RawNoteData = {
+export interface RawNoteData {
   title: string;
   markdown: string;
   tagIds: string[];
 };
 
-export type NoteData = {
+export interface NoteData {
   title: string;
   markdown: string;
   tags: Tag[];
 };
 
-export type Tag = {
+export interface Tag {
   id: string;
   label: string;
 };
